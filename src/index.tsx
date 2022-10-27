@@ -4,8 +4,6 @@ import { reportWebVitals } from './tools/reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { App } from './components/app/app';
 
-
-
 // Just like vue where you choose an ID to start your page from, this gets a dom element to hook into
 const hookElement = document.getElementById('root') as HTMLElement;
 const root = createRoot(hookElement);
