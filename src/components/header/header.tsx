@@ -6,7 +6,7 @@ export function Header(): JSX.Element {
 
   return (
     <>
-        <header className="masthead">
+        <header className="masthead" id="page-top">
             <Container>
                 <div className="masthead-heading text-uppercase">Leon</div>
                 <div className="masthead-heading text-uppercase">Hutchinson</div>

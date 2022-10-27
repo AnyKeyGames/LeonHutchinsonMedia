@@ -10,51 +10,6 @@ interface INavBarRoute {
 
 export function NavBarComponent(): JSX.Element {
 
-  window.addEventListener('DOMContentLoaded', event => {
-
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
-    };
-
-    // Shrink the navbar 
-    navbarShrink();
-
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    // Activate Bootstrap scrollspy on the main nav element
-    // const mainNav = document.body.querySelector('#mainNav');
-    // if (mainNav) {
-    //     new bootstrap.ScrollSpy(document.body, {
-    //         target: '#mainNav',
-    //         offset: 74,
-    //     });
-    // };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler: any = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem: any) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-
-});
 
   const baseRoutes: INavBarRoute[] = [
     { text: 'About', path: '#about'},
@@ -64,7 +19,7 @@ export function NavBarComponent(): JSX.Element {
 
   function routeLinks(): JSX.Element[] {
     let routes = baseRoutes
-    return routes.map((route) => <NavLink className='nav-item' key={ route.text } to={ route.path }>{ route.text }</NavLink>)
+    return routes.map((route) => <a className='nav-item' href={route.path} key={ route.text }>{ route.text }</a>)
   }
 
   return (
