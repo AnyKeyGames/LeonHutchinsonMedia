@@ -6,7 +6,7 @@ export function Social(): JSX.Element {
 
   return (
     <>
-        <section className="page-section bg-light" id="team">
+        <section className="page-section bg-light" id="social">
             <div className="container">
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">Follow me online</h2>

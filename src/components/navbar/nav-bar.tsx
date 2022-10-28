@@ -19,7 +19,8 @@ export function NavBarComponent(): JSX.Element {
 
   function routeLinks(): JSX.Element[] {
     let routes = baseRoutes
-    return routes.map((route) => <a className='nav-item' href={route.path} key={ route.text }>{ route.text }</a>)
+    // return routes.map((route) => <div></div>)
+    return routes.map((route) => <li className='nav-item' key={route.text}><a className='nav-link' href={route.path}>{ route.text }</a></li>)
   }
 
   return (
