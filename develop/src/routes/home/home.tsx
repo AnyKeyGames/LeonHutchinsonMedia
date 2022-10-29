@@ -9,6 +9,7 @@ import '../../core/css/core.css';
 import '../../core/css/animations.css';
 import { Footer } from '../../components/footer';
 import { Social } from '../../components/social';
+import { Portfolio } from '../../components/portfolio';
 
 export function Home(): JSX.Element {
   
@@ -18,6 +19,8 @@ export function Home(): JSX.Element {
         <div className="App">
           <Header />
           <About />
+          <Portfolio />
+
           <Social />
 
           <Footer />
