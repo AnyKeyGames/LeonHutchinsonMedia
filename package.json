@@ -1,7 +1,7 @@
 {
   "homepage": "http://anykeygames.github.io/LeonHutchinsonMedia",
   "name": "lhmedia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "serve": "concurrently --kill-others npm:start npm:emulators",
@@ -20,7 +20,7 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.64",
     "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
+    "@types/react-dom": "^18.0.6", 
     "concurrently": "^7.4.0",
     "eslint-plugin-react": "^7.31.8",
     "firebase-tools": "^11.13.0",
