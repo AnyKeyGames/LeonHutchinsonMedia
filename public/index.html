@@ -26,7 +26,7 @@
       
       // Navbar shrink function
       var navbarShrink = function () {
-          const navbarCollapsible = document.body.querySelector('#mainNav');
+          const navbarCollapsible = document.querySelector('#mainNav');
           if (!navbarCollapsible) {
               return;
           }
@@ -65,26 +65,20 @@
                   navbarToggler.click();
               }
           });
+      });   
       });
 
-
-            
-      
-      });
-
-      window.addEventListener('load', event => {
+      window.addEventListener('DOMContentLoaded', event => {
         const hiddenElements = document.querySelectorAll('.hidden');
         const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if(entry.isIntersecting){
                         entry.target.classList.add('show');
-                        entry.target.classList.remove('hidden');
                     } else {
                         entry.target.classList.remove('show');
                     }
                 })
             })
-
         hiddenElements.forEach((el) => observer.observe(el))
       });
     </script>
