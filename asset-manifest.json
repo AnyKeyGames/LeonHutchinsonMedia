@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/LeonHutchinsonMedia/static/css/main.99b4cbbf.css",
+    "main.js": "/LeonHutchinsonMedia/static/js/main.13c1a35e.js",
+    "static/js/787.9cdd327f.chunk.js": "/LeonHutchinsonMedia/static/js/787.9cdd327f.chunk.js",
+    "static/media/header-bg-lh.jpg": "/LeonHutchinsonMedia/static/media/header-bg-lh.2cad4c7f74d36bf02eee.jpg",
+    "static/media/map-image.png": "/LeonHutchinsonMedia/static/media/map-image.3cd6dd9808474f6ed762.png",
+    "static/media/3.jpg": "/LeonHutchinsonMedia/static/media/3.6206f84908ceb5a9e9c0.jpg",
+    "index.html": "/LeonHutchinsonMedia/index.html",
+    "main.99b4cbbf.css.map": "/LeonHutchinsonMedia/static/css/main.99b4cbbf.css.map",
+    "main.13c1a35e.js.map": "/LeonHutchinsonMedia/static/js/main.13c1a35e.js.map",
+    "787.9cdd327f.chunk.js.map": "/LeonHutchinsonMedia/static/js/787.9cdd327f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99b4cbbf.css",
+    "static/js/main.13c1a35e.js"
+  ]
+}
