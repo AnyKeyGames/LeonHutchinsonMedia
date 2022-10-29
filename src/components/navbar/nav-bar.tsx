@@ -29,7 +29,7 @@ export function NavBarComponent(): JSX.Element {
         <Container>
             <a className="navbar-brand" href="#page-top">Leon Hutchinson Media</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
+                
                 <i className="fas fa-bars ms-1"></i>
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">

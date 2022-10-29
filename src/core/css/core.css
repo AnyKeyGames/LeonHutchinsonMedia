@@ -4103,7 +4103,7 @@ textarea.form-control-lg {
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem;
+  /* box-shadow: 0 0 0 0.25rem; */
 }
 
 .navbar-toggler-icon {
@@ -4493,8 +4493,15 @@ textarea.form-control-lg {
   color: #fff;
 }
 .navbar-dark .navbar-toggler {
+  color: var(--bs-yellow);
+  transition: 0.3s;
+  /* border-color: rgba(255, 255, 255, 0.1); */
+}
+
+.navbar-dark .navbar-toggler.collapsed {
   color: rgba(255, 255, 255, 0.55);
-  border-color: rgba(255, 255, 255, 0.1);
+
+  /* border-color: rgba(255, 255, 255, 0.1); */
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -11406,8 +11413,9 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  height: 90vh;
+  /* padding-top: 10.5rem;
+  padding-bottom: 6rem; */
   /* text-align: center; */
   color: #fff;
   background-image: url("../../assets/images/header-bg-lh.jpg");
@@ -11416,6 +11424,9 @@ header.masthead {
   background-position: center center;
   background-size: cover;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 header.masthead::before {
   content: '';
@@ -11482,6 +11493,18 @@ header.masthead .masthead-heading {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+#portfolio .portfolio-item.show{
+  animation: show;
+  animation-delay: calc(var(--animation-delay) * 100ms);
+  animation-duration: 600ms;
+  animation-fill-mode: both;
+}
+
+#portfolio .portfolio-item.hidden{
+  opacity: 0;
+
 }
 #portfolio .portfolio-item .portfolio-link {
   position: relative;

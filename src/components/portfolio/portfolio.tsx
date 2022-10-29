@@ -1,19 +1,12 @@
 import Container from 'react-bootstrap/esm/Container';
 import { PortfolioElement } from '../portfolio-element';
-import { PortfolioModal } from '../portfolio-modal';
 
 import { portfolioData} from '../../data/data'
 
 export function Portfolio(): JSX.Element {
-    // console.log(portfolioData)
     function generateElement() {
-        return portfolioData.map((data: any) => <PortfolioElement content={data} key={data.title}></PortfolioElement>)
-        // return <div></div>
-    //   return results.map((result, index) => <ProfileMatchResult data={ [result, index] } key={ index }></ProfileMatchResult>)
-
-
+        return portfolioData.map((data: any, index) => <PortfolioElement content={data} number={index} key={data.title}></PortfolioElement>)
     }
-{/* <a className='nav-item' href={route.path} key={ route.text }>{ route.text }</a> */}
   return (
     <>
  <section className="page-section bg-light" id="portfolio">
@@ -26,13 +19,6 @@ export function Portfolio(): JSX.Element {
                 </div>
                 <div className="row">
                     {generateElement()}
-                    {/* <PortfolioElement></PortfolioElement> */}
-                    {/* <PortfolioElement></PortfolioElement>
-                    <PortfolioElement></PortfolioElement>
-                    <PortfolioElement></PortfolioElement>
-                    <PortfolioElement></PortfolioElement>
-                    <PortfolioElement></PortfolioElement>                     */}
-                    
                 </div>
             </Container>
         </section>

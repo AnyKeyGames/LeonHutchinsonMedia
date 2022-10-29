@@ -2,15 +2,12 @@ import Container from 'react-bootstrap/esm/Container';
 import { PortfolioModal } from '../portfolio-modal';
 
 export function PortfolioElement(props: any): JSX.Element {
-
-    console.log(props.content)
-
+  const delay = { "--animation-delay": props.number } as React.CSSProperties;
 
   return (
     <>
         <div className="col-lg-4 col-sm-6 mb-4">
-            {/* <!-- Portfolio item 1--> */}
-            <div className="portfolio-item">
+            <div className="portfolio-item hidden" style={delay}>
                 <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                     <div className="portfolio-hover">
                         <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>

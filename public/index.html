@@ -46,7 +46,7 @@
       
       // Activate Bootstrap scrollspy on the main nav element
       const mainNav = document.body.querySelector('#mainNav');
-      console.log(mainNav)
+
       if (mainNav) {
           new bootstrap.ScrollSpy(document.body, {
               target: '#mainNav',
@@ -66,9 +66,29 @@
               }
           });
       });
+
+
+            
       
       });
-          </script>
+
+      window.addEventListener('load', event => {
+        const hiddenElements = document.querySelectorAll('.hidden');
+        const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if(entry.isIntersecting){
+                        entry.target.classList.add('show');
+                        entry.target.classList.remove('hidden');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                })
+            })
+
+        hiddenElements.forEach((el) => observer.observe(el))
+      });
+    </script>
+
 
   </body>
 </html>
