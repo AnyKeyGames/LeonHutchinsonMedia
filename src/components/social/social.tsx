@@ -1,4 +1,4 @@
-import Container from 'react-bootstrap/esm/Container';
+import React from 'react';
 import '../../core/css/core.css';
 import socialImage from './assets/3.jpg'
 

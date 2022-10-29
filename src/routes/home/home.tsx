@@ -1,6 +1,4 @@
-
-import Container from 'react-bootstrap/esm/Container';
-
+import React from 'react';
 import { Header } from '../../components/header';
 import { About } from '../../components/about/about';
 

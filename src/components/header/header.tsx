@@ -1,3 +1,4 @@
+import React from 'react';
 import Container from 'react-bootstrap/esm/Container';
 import '../../core/css/core.css';
 import './header.css';
