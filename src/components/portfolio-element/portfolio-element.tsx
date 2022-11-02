@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import Container from 'react-bootstrap/esm/Container';
 import { PortfolioModal } from '../portfolio-modal';
 
 export function PortfolioElement(props: any): JSX.Element {

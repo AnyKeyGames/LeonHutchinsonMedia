@@ -5995,7 +5995,11 @@ textarea.form-control-lg {
 }
 
 .carousel {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* z-index: -1; */
+  pointer-events:all;
 }
 
 .carousel.pointer-event {
@@ -6005,12 +6009,23 @@ textarea.form-control-lg {
 .carousel-inner {
   position: relative;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .carousel-inner::after {
   display: block;
   clear: both;
   content: "";
+}
+
+.carousel-item img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: contain;
+  translate: -50% -50%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
 }
 
 .carousel-item {
@@ -6022,6 +6037,7 @@ textarea.form-control-lg {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+  overflow: hidden;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -6075,11 +6091,10 @@ textarea.form-control-lg {
 .carousel-control-next {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 5%;
   z-index: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
   width: 15%;
   padding: 0;
   color: #fff;
@@ -6088,6 +6103,7 @@ textarea.form-control-lg {
   border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
+  align-content: flex-start;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
@@ -11414,11 +11430,7 @@ p {
 }
 header.masthead {
   height: 90vh;
-  /* padding-top: 10.5rem;
-  padding-bottom: 6rem; */
-  /* text-align: center; */
   color: #fff;
-  background-image: url("../../assets/images/header-bg-lh.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11439,9 +11451,13 @@ header.masthead::before {
   opacity: 0.5;
   animation: scaleDown;
   animation-duration: 3s;
+  z-index: 1;
+  pointer-events: none;
 }
+
 header.masthead .container{
   position: relative;
+  z-index: 10;
 }
 header.masthead .masthead-subheading {
   animation: fade;
@@ -11473,10 +11489,10 @@ header.masthead .masthead-heading {
 }
 
 @media (min-width: 768px) {
-  header.masthead {
+  /* header.masthead {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
-  }
+  } */
   header.masthead .masthead-subheading {
     font-size: 1.3rem;
     line-height: 2.25rem;

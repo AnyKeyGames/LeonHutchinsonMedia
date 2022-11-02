@@ -18,7 +18,7 @@ export function Social(): JSX.Element {
                         <img className="mx-auto rounded-circle" src={socialImage} alt="..." />
                             <h4>Leon Hutchinson</h4>
                             <p className="text-muted">Sunderland based photographer / Videographer</p>
-                            <a className="btn btn-dark btn-social mx-2" href="https://www.facebook.com/LHMedia21/about" aria-label="Leon Hutchinson Twitter Profile"><i className="fab fa-facebook-f"></i></a>
+                            <a className="btn btn-dark btn-social mx-2" href="https://www.facebook.com/LHMedia21" aria-label="Leon Hutchinson Twitter Profile"><i className="fab fa-facebook-f"></i></a>
                             <a className="btn btn-dark btn-social mx-2" href="https://www.youtube.com/channel/UCMzZ7oaE1evmNYng56CbyQQ" aria-label="Leon Hutchinson Youtube Profile"><i className="fab fa-youtube"></i></a>
                             <a className="btn btn-dark btn-social mx-2" href="https://www.instagram.com/leon_hutchinson_media/" aria-label="Leon Hutchinson Instagram Profile"><i className="fab fa-instagram"></i></a>
                         </div>
