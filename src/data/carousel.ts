@@ -1,21 +1,21 @@
 export const carouselData = [
     {
         title: 'example',
-        desc: 'football...',
-        img: './images/header-1.jpg',
-        alt: 'football...',
+        desc: '',
+        img: './images/portfolio/pm.jpg',
+        alt: '',
     },
     {
         title: 'example2',
-        desc: 'more football...',
-        img: './images/header-2.jpg',
-        alt: 'more football...',
+        desc: '',
+        img: './images/portfolio/safc1.jpg',
+        alt: '',
     },
     {
         title: 'example3',
-        desc: 'crowd...',
-        img: './images/header-3.jpg',
-        alt: 'crowd...',
+        desc: '',
+        img: './images/portfolio/rc.jpg',
+        alt: '',
     },
     
 ]
