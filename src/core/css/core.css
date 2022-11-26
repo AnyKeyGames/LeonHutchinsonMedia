@@ -599,6 +599,11 @@ progress {
   content: "— ";
 }
 
+.portfolio-link .img-fluid{
+    min-height: 300px;
+    object-fit: cover;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;

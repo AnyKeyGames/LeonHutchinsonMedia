@@ -22,7 +22,7 @@ export function PortfolioElement(props: any): JSX.Element {
     <>
         <div className="col-lg-4 col-sm-6 mb-4">
             <div className="portfolio-item hidden" style={delay}>
-                <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                <a className="portfolio-link" data-bs-toggle="modal" href={'#portfolioModal'+props.number}>
                     <div className="portfolio-hover">
                         <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                     </div>
@@ -34,7 +34,7 @@ export function PortfolioElement(props: any): JSX.Element {
                 </div>
             </div>
         </div>
-        <PortfolioModal content={props.content}></PortfolioModal>
+        <PortfolioModal content={props.content} number={props.number}></PortfolioModal>
     </>
   )
   

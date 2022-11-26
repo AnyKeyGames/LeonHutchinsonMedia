@@ -2,9 +2,13 @@ import Container from 'react-bootstrap/esm/Container';
 
 export function PortfolioModal(props:any): JSX.Element {
 
+    function listContent() {
+        return props.content.content.map((data: any, index: any) => <img className="img-fluid d-block mx-auto" src={data} key={data} alt="..." />)
+    }
+
   return (
     <>
-      <div className="portfolio-modal modal fade" id="portfolioModal1" role="dialog" aria-hidden="true">
+      <div className="portfolio-modal modal fade" id={'portfolioModal'+props.number} role="dialog" aria-hidden="true">
           <div className="modal-dialog">
               <div className="modal-content">
                   <div className="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" /></div>
@@ -14,7 +18,7 @@ export function PortfolioModal(props:any): JSX.Element {
                               <div className="modal-body">
                                   <h2 className="text-uppercase">{props.content.title}</h2>
                                   <p className="item-intro text-muted">{props.content.subheading}</p>
-                                  <img className="img-fluid d-block mx-auto" src={props.content.headerImage} alt="..." />
+                                  {listContent()}
                                   <p>{props.content.description}</p>
                                   <ul className="list-inline">
                                       <li>
