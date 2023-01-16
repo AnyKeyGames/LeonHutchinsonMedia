@@ -8,6 +8,7 @@ import '../../core/css/animations.css';
 import { Footer } from '../../components/footer';
 import { Social } from '../../components/social';
 import { Portfolio } from '../../components/portfolio';
+import { Featured } from '../../components/featured';
 
 export function Home(): JSX.Element {
   
@@ -17,10 +18,9 @@ export function Home(): JSX.Element {
         <div className="App">
           <Header />
           <About />
+          <Featured/>
           <Portfolio />
-
           <Social />
-
           <Footer />
         </div>
       {/* </Container> */}

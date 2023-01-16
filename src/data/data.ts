@@ -71,6 +71,5 @@ export const portfolioData = [
             './images/portfolio/wildlife/Wildlife-3.jpg',
             './images/portfolio/wildlife/Wildlife-4.jpg',
         ]
-    },
-
+    }
 ]

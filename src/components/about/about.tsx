@@ -16,26 +16,26 @@ export function About(): JSX.Element {
                     <div className="col-md-4">
                         <span className="fa-stack fa-4x">
                             <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                            {/* <i className="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> */}
+                            <i className="fas fa-camera fa-stack-1x fa-inverse"></i>
                         </span>
                         {/* <h4 className="my-3">E-Commerce</h4> */}
-                        <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p className="text-muted">Hi there, I'm Leon, a versatile photo and videographer based in the northeast of England. With a passion for visual storytelling, I've honed my craft through a diverse range of photography niches, including landscape, nature, and content creation for a semi-professional football team.</p>
                     </div>
                     <div className="col-md-4">
                         <span className="fa-stack fa-4x">
                             <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                            {/* <i className="fas fa-laptop fa-stack-1x fa-inverse"></i> */}
+                            <i className="fas fa-user-graduate fa-stack-1x fa-inverse"></i>
                         </span>
                         {/* <h4 className="my-3">Responsive Design</h4> */}
-                        <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p className="text-muted">After self-teaching myself the basics, I went on to study Creative Media at college, where I further developed my skills, made valuable industry connections, and elevated the quality of my work.</p>
                     </div>
                     <div className="col-md-4">
                         <span className="fa-stack fa-4x">
                             <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                            {/* <i className="fas fa-lock fa-stack-1x fa-inverse"></i> */}
+                            <i className="fas fa-film fa-stack-1x fa-inverse"></i>
                         </span>
                         {/* <h4 className="my-3">Web Security</h4> */}
-                        <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p className="text-muted">I've had the opportunity to work on projects for notable clients such as The North East Football Writers Awards, live music gigs, and football clubs. As I continue to grow and evolve in the creative industry, I invite you to explore my website and discover the content I've created over the years.</p>
                     </div>
                 </div>
             </Container>

@@ -11,7 +11,6 @@ export function Header(): JSX.Element {
   const delay2 = { "--animation-delay": 1.5 } as React.CSSProperties;
   const delay3 = { "--animation-delay": 3 } as React.CSSProperties;
 
-
   return (
     <>
         <header className="masthead" id="page-top">
